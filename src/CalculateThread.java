@@ -5,8 +5,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class CalculateThread extends MyThread {
     private boolean isEnd;
 
-    public CalculateThread(Integer[] array, int delayTime, AtomicInteger createdElementsCount) {
-        super(array, delayTime, createdElementsCount);
+    public CalculateThread(Integer[] array, int delayTime, AtomicInteger createdElementsCount, JPanel view) {
+        super(array, delayTime, createdElementsCount, view);
         isEnd = false;
     }
 

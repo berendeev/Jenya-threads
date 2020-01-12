@@ -6,8 +6,9 @@ public class CreatorThread extends MyThread {
 
     private final Random random;
 
-    public CreatorThread(Integer[] array, int delayTime, AtomicInteger createdElementsCount) {
-        super(array, delayTime, createdElementsCount);
+
+    public CreatorThread(Integer[] array, int delayTime, AtomicInteger createdElementsCount, JPanel view) {
+        super(array, delayTime, createdElementsCount, view);
 
         random = new Random(11); // seed for test. todo delete seed
     }

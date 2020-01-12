@@ -6,8 +6,8 @@ public class SortThread extends MyThread {
 
     private boolean isEnd;
 
-    public SortThread(Integer[] array, int delayTime, AtomicInteger createdElementsCount) {
-        super(array, delayTime, createdElementsCount);
+    public SortThread(Integer[] array, int delayTime, AtomicInteger createdElementsCount, JPanel view) {
+        super(array, delayTime, createdElementsCount, view);
 
         isEnd = false;
     }
